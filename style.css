@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(48, 48, 48);
+}
+
+header {
+    background: rgb(255, 213, 213);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main article.card {
+    width: 220px;
+    height: 320px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card aside.top {
+    align-self: flex-start;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.card h1 {
+    font-size: 60px;
+}
+
+.card aside.bottom {
+    align-self: flex-end;
+    transform: rotateZ(180deg);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.card.red h1, .card.red aside span {
+    color: rgb(130, 20, 20);
+}
+
+footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    background: #222;
+    color: #eee;
+    text-decoration: none;
+    padding: 16px 32px;
+    margin: 16px;
+    border-radius: 999px;
+    opacity: .8;
+    box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+footer a:active {
+    background: black;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
